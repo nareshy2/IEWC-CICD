@@ -18,19 +18,19 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>$(mule.maven.plugin.version)</version>
+				<version>3.0.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>$(mule.maven.plugin.version)</version>
+				<version>3.3.5</version>
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
 			      <muleVersion>4.4.0</muleVersion>
 			      <username>nareshyr2</username>
 			      <password>Naresh123!</password>
-			      <applicationName>iewc-pipe-Single</applicationName>
+			      <applicationName>IEWC-pipe_Single</applicationName>
 			      <environment>Sandbox</environment>   
 			      <workers>1</workers>
 			      <workerType>MICRO</workerType>
