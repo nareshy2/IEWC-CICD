@@ -35,6 +35,12 @@
 			      <workers>1</workers>
 			      <workerType>MICRO</workerType>
 			      <objectStoreV2>true</objectStoreV2>
+			      <properties>
+				    <maven.compiler.target>1.8</maven.compiler.target>
+				    <maven.compiler.source>1.8</maven.compiler.source>
+				    <anypoint.platform.client_id>b25b6a2501af4c7eacc039dc5cf2290a</anypoint.platform.client_id>
+				    <anypoint.platform.client_secret>Bb20A3F2D1fe43fC9c456279BADbf5c8</anypoint.platform.client_secret>
+			      </properties>
 				  <uri>https://anypoint.mulesoft.com</uri>
 			    </cloudHubDeployment>
 				</configuration>
