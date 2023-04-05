@@ -40,10 +40,10 @@
 				</configuration>
 				<executions>
 				    <execution>
-					<id>deploy</id>
-					<phase>deploy</phase>
+				
+					<phase>package</phase>
 					<goals>
-					    <goal>deploy</goal>
+					    <goal>validate</goal>
 					</goals>
 					<configuration>
 					    <classifier>mule-application</classifier>
