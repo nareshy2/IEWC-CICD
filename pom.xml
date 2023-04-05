@@ -38,18 +38,15 @@
 				  <uri>https://anypoint.mulesoft.com</uri>
 			    </cloudHubDeployment>
 				</configuration>
-				<executions>
-				    <execution>
-				
-					<phase>package</phase>
-					<goals>
-					    <goal>validate</goal>
-					</goals>
-					<configuration>
-					    <classifier>mule-application</classifier>
-					</configuration>
-				    </execution>
-				</executions>
+			      <executions>
+				<execution>
+				  <id>deploy</id>
+				  <phase>mule</phase> <!-- Make sure 'mule' phase is spelled correctly -->
+				  <goals>
+				    <goal>deploy</goal>
+				  </goals>
+				</execution>
+			      </executions>
 			</plugin>
 		</plugins>
 	</build>
