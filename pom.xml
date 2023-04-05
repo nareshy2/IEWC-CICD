@@ -6,7 +6,7 @@
 	<artifactId>maven-cicdDev</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
-	<name>IEWC-pipe</name>
+	<name>single</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -30,7 +30,7 @@
 			      <muleVersion>4.4.0</muleVersion>
 			      <username>nareshyr2</username>
 			      <password>Naresh123!</password>
-			      <applicationName>IEWC-pipe_Single</applicationName>
+			      <applicationName>single</applicationName>
 			      <environment>Sandbox</environment>   
 			      <workers>1</workers>
 			      <workerType>MICRO</workerType>
