@@ -39,13 +39,16 @@
 			    </cloudHubDeployment>
 				</configuration>
 				<executions>
-				 <execution>
+				    <execution>
 					<id>deploy</id>
 					<phase>deploy</phase>
 					<goals>
-						<goal>deploy</goal>
+					    <goal>deploy</goal>
 					</goals>
-				 </execution>
+					<configuration>
+					    <classifier>mule-application</classifier>
+					</configuration>
+				    </execution>
 				</executions>
 			</plugin>
 		</plugins>
