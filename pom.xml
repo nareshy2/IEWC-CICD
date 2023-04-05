@@ -46,8 +46,8 @@
 				</configuration>
 			      <executions>
 				<execution>
-				  <id>deploy</id>
-				  <phase>mule</phase>
+
+				  <phase>package</phase>
 				  <goals>
 				    <goal>deploy</goal>
 				  </goals>
