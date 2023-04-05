@@ -47,7 +47,7 @@
 			      <executions>
 				<execution>
 				  <id>deploy</id>
-				  <phase>deploy</phase>
+				  <phase>mule</phase>
 				  <goals>
 				    <goal>deploy</goal>
 				  </goals>
