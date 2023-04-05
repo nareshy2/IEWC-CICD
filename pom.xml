@@ -44,15 +44,18 @@
 				  <uri>https://anypoint.mulesoft.com</uri>
 			    </cloudHubDeployment>
 				</configuration>
-			      <executions>
-				<execution>
-
-				  <phase>package</phase>
-				  <goals>
-				    <goal>deploy</goal>
-				  </goals>
-				</execution>
-			      </executions>
+      <groupId>org.mule.tools</groupId>
+      <artifactId>maven-mule-plugin</artifactId>
+      <version>3.8.0</version> <!-- Replace with the correct version -->
+      <executions>
+        <execution>
+          <id>deploy</id>
+          <phase>mule</phase> <!-- Make sure 'mule' phase is spelled correctly -->
+          <goals>
+            <goal>deploy</goal>
+          </goals>
+        </execution>
+      </executions>
 			</plugin>
 		</plugins>
 	</build>
