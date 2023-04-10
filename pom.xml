@@ -30,9 +30,8 @@
 			      <muleVersion>4.4.0</muleVersion>
 			      <username>nareshyr2</username>
 			      <password>Naresh123!</password>
-			      <applicationName>IEWC-pipe_Single</applicationName>
-			      <environment>Sandbox</environment>   
-					 
+			      <applicationName>SingleNew</applicationName>
+			      <environment>Sandbox</environment>   		 
 			      <workers>1</workers>
 			      <workerType>MICRO</workerType>
 			      <objectStoreV2>true</objectStoreV2>
@@ -41,7 +40,7 @@
 				</configuration>
 			      <executions>
 				<execution>
-				  <id>mule</id>
+				  <id>SingleNew</id>
 				  <phase>deploy</phase> <!-- Make sure 'mule' phase is spelled correctly -->
 				  <goals>
 				    <goal>deploy</goal>
