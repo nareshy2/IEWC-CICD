@@ -47,7 +47,7 @@
 			      <executions>
 				<execution>
 				  <id>install</id>
-				  <phase>deploy</phase>
+				  <phase>package</phase>
 				  <goals>
 				    <goal>deploy</goal>
 				  </goals>
