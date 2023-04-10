@@ -41,7 +41,7 @@
 				</configuration>
 			      <executions>
 				<execution>
-				  <id>deploy</id>
+				  <id>mule</id>
 				  <phase>deploy</phase> <!-- Make sure 'mule' phase is spelled correctly -->
 				  <goals>
 				    <goal>deploy</goal>
