@@ -40,8 +40,8 @@
 				</configuration>
 			      <executions>
 				<execution>
-				  <id>SingleNew</id>
-				  <phase>deploy</phase> <!-- Make sure 'mule' phase is spelled correctly -->
+				  <id>package</id>
+				  <phase>install</phase>
 				  <goals>
 				    <goal>deploy</goal>
 				  </goals>
