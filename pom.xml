@@ -6,7 +6,7 @@
 	<artifactId>maven-cicdDev</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
-	<name>single</name>
+	<name>IEWC-pipe</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -30,43 +30,38 @@
 			      <muleVersion>4.4.0</muleVersion>
 			      <username>nareshyr2</username>
 			      <password>Naresh123!</password>
-			      <applicationName>single</applicationName>
+			      <applicationName>IEWC-pipe_Single</applicationName>
 			      <environment>Sandbox</environment>   
+					 
 			      <workers>1</workers>
 			      <workerType>MICRO</workerType>
 			      <objectStoreV2>true</objectStoreV2>
-			      <properties>
-				    <maven.compiler.target>1.8</maven.compiler.target>
-				    <maven.compiler.source>1.8</maven.compiler.source>
-				    <anypoint.platform.client_id>b25b6a2501af4c7eacc039dc5cf2290a</anypoint.platform.client_id>
-				    <anypoint.platform.client_secret>Bb20A3F2D1fe43fC9c456279BADbf5c8</anypoint.platform.client_secret>
-			      </properties>
 				  <uri>https://anypoint.mulesoft.com</uri>
 			    </cloudHubDeployment>
 				</configuration>
-      <groupId>org.mule.tools</groupId>
-      <artifactId>maven-mule-plugin</artifactId>
-      <version>3.8.0</version> <!-- Replace with the correct version -->
-      <executions>
-        <execution>
-          <id>deploy</id>
-          <phase>mule</phase> <!-- Make sure 'mule' phase is spelled correctly -->
-          <goals>
-            <goal>deploy</goal>
-          </goals>
-        </execution>
-      </executions>
+			      <executions>
+				<execution>
+				  <id>deploy</id>
+				  <phase>mule</phase> <!-- Make sure 'mule' phase is spelled correctly -->
+				  <goals>
+				    <goal>deploy</goal>
+				  </goals>
+				</execution>
+			      </executions>
 			</plugin>
 		</plugins>
 	</build>
+   
 		<distributionManagement>
 		<repository>
+		
 			<id>MuleRepository</id>
 			<name>Corporate Repository</name>
 			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/7671e6a4-ad1e-4b5e-bfd8-5f5958f80ff1/maven</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
+  
 	<dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
@@ -87,6 +82,7 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
+		 
 	<repositories>
           <repository>
             <id>anypoint-exchange-v2</id>
