@@ -46,7 +46,7 @@
 				</configuration>
 			      <executions>
 				<execution>
-				  <id>singlenew</id>
+				  <id>deploy</id>
 				  <phase>deploy</phase>
 				  <goals>
 				    <goal>deploy</goal>
