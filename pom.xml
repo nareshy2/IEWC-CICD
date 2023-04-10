@@ -42,7 +42,7 @@
 			      <executions>
 				<execution>
 				  <id>deploy</id>
-				  <phase>mule</phase> <!-- Make sure 'mule' phase is spelled correctly -->
+				  <phase>deploy</phase> <!-- Make sure 'mule' phase is spelled correctly -->
 				  <goals>
 				    <goal>deploy</goal>
 				  </goals>
