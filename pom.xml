@@ -46,7 +46,7 @@
 				</configuration>
 			      <executions>
 				<execution>
-				  <id>deploy</id>
+				  <id>install</id>
 				  <phase>deploy</phase>
 				  <goals>
 				    <goal>deploy</goal>
