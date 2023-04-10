@@ -47,7 +47,7 @@
 			      <executions>
 				<execution>
 				  <id>singlenew</id>
-				  <phase>install</phase>
+				  <phase>deploy</phase>
 				  <goals>
 				    <goal>deploy</goal>
 				  </goals>
