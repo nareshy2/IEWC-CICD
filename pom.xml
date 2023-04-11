@@ -46,8 +46,8 @@
 				</configuration>
 			      <executions>
 				<execution>
-				  <id>install</id>
-				  <phase>package</phase>
+				  <id>package</id>
+				  <phase>install</phase>
 				  <goals>
 				    <goal>deploy</goal>
 				  </goals>
@@ -55,7 +55,18 @@
 			      </executions>
 			</plugin>
 		</plugins>
-	</build>  
+	</build>
+   
+		<distributionManagement>
+		<repository>
+		
+			<id>MuleRepository</id>
+			<name>Corporate Repository</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/7671e6a4-ad1e-4b5e-bfd8-5f5958f80ff1/maven</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
+  
 	<dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
