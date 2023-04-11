@@ -46,8 +46,8 @@
 				</configuration>
 			      <executions>
 				<execution>
-				  <id>package</id>
-				  <phase>install</phase>
+				  <id>deploy</id>
+				  <phase>deploy</phase>
 				  <goals>
 				    <goal>deploy</goal>
 				  </goals>
