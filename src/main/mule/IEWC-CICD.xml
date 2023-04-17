@@ -14,6 +14,9 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
 		</http:request-connection>
 	</http:request-config>
 	<api-gateway:autodiscovery apiId="18602398" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="137247e3-8242-42e1-ab25-29f88d95c1ef" flowRef="demo-main" />
+	<import doc:name="Import" doc:id="1025f721-d22f-4634-86fe-8a5cf213bdc1" doc:description="common-global" file="common-global.xml" />
+	<import doc:name="Import" doc:id="54cabc6c-6879-49b2-8fb8-49b3189b324b" doc:description="error-handler" file="error-handler.xml" />
+	<import doc:name="Import" doc:id="8d4a776d-7f1c-4cae-96f0-73463081e116" doc:description="mule-common-logging" file="mule-common-logging.xml" />
 	<flow name="demo-main">
         <http:listener config-ref="demo-httpListenerConfig" path="/api/*">
             <http:response statusCode="#[vars.httpStatus default 200]">
@@ -134,6 +137,14 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\getCity:demo-config">
+		<ee:transform doc:name="Set Correlation Id" doc:id="7f99f762-f934-4ce6-a8fd-a1bb76b39346">
+			<ee:message />
+			<ee:variables>
+				<ee:set-variable variableName="correlationId"><![CDATA[attributes.headers.correlationId default uuid()]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<flow-ref doc:name="Flow Reference" doc:id="109a882e-9e9c-4558-8c14-81708799c26f" name="mile-log:request-received"/>
+		<logger level="INFO" doc:name="Logger" doc:id="55d22ee5-0288-42a7-9bac-26ffca198979" message="#[payload]"/>
 		<ee:transform doc:id="d5141261-5c62-4252-ac44-952b05aab9d3">
             <ee:message>
             </ee:message>
