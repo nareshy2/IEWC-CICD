@@ -117,16 +117,33 @@
 			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/45fe9fe3-71e9-4c7f-99b4-aade424656d9/maven</url>
 			<layout>default</layout>
 		</repository>
+		        <repository>
+            <id>releases-ee</id>
+            <name>Mule EE Repository</name>
+            <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+            <layout>default</layout>
+        </repository>
 		</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>mulesoft-releases</id>
-			<name>mulesoft release repository</name>
-			<layout>default</layout>
-			<url>https://repository.mulesoft.org/releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
+
+	    <pluginRepositories>
+        <pluginRepository>
+            <id>mulesoft-releases</id>
+            <name>mulesoft release repository</name>
+            <layout>default</layout>
+            <url>http://repository.mulesoft.org/releases/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+
+    </pluginRepositories>
+	<distributionManagement>
+        <repository>
+            <id>anypoint-exchange</id>
+            <name>Anypoint Exchange</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/YOUR_GROUP_ID/maven
+            </url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
 </project>
