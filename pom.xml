@@ -80,7 +80,7 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency> 
-		<groupId>f71744f6-c56a-460f-8321-2c7c82cd6a6e</groupId> 
+		<groupId>3d244ed7-6ddf-49a9-be6d-96e22048cbc0</groupId> 
 		<artifactId>mule-common-libraries</artifactId> 
 		<version>1.0.0</version> 
 		<classifier>mule-plugin</classifier> 
