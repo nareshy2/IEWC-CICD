@@ -27,8 +27,8 @@
 				<configuration>
 					<cloudHubDeployment>
 						<muleVersion>4.4.0</muleVersion>
-						<username>SwathiJaini</username>
-						<password>Swats@2312</password>
+						<username>nareshpss</username>
+						<password>Naresh123!</password>
 						<applicationName>CICD-MVN-Apr20</applicationName>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
