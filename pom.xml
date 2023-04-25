@@ -82,7 +82,7 @@
 		<dependency> 
 		<groupId>3d244ed7-6ddf-49a9-be6d-96e22048cbc0</groupId> 
 		<artifactId>mule-common-libraries</artifactId> 
-		<version>1.0.0</version> 
+		<version>1.0.3</version> 
 		<classifier>mule-plugin</classifier> 
 		</dependency>
 		<dependency>
